@@ -8,8 +8,9 @@ export const read = async () => {
 
   fs.access(pathFile, fs.F_OK, (err)=> {
     if(err) return console.log('FS operation failed');
-    const $stream = fs.createReadStream(pathFile);
-    $stream.on('data', (data) => console.log(data.toString()));
+    // const $stream = fs.createReadStream(pathFile);
+    // $stream.on('data', (data) => console.log(data.toString()));
+    fs.readFile(pathFile, 'utf8', (err, data) => console.log(data));
   });
 };
 read();
