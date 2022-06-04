@@ -9,7 +9,6 @@ export const read = async () => {
   const __dirname = dirname(__filename);
   const { stdout } = process;
   
-
   const readableStream = fs.createReadStream(
     path.join(__dirname, './files/fileToRead.txt'), 'utf-8'
   );
