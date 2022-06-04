@@ -7,11 +7,13 @@ export const read = async () => {
 
   const __filename = fileURLToPath(import.meta.url);
   const __dirname = dirname(__filename);
+  const { stdout } = process;
+  
 
   const readableStream = fs.createReadStream(
     path.join(__dirname, './files/fileToRead.txt'), 'utf-8'
   );
-  readableStream.on('data', chunk => console.log('\x1b[36m%s\x1b[0m', chunk))
+  readableStream.on('data', chunk => stdout.write(chunk))
 };
 read();
 
