@@ -22,3 +22,5 @@ export const rename = async () => {
 };
 rename();
 
+// for Powershell terminal run commands:
+// node src/fs/rename

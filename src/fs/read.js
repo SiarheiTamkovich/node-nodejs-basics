@@ -14,3 +14,6 @@ export const read = async () => {
   });
 };
 read();
+
+// for Powershell terminal run commands:
+// node src/fs/read

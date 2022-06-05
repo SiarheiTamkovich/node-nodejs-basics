@@ -12,3 +12,6 @@ export const remove = async () => {
   })
 };
 remove();
+
+// for Powershell terminal run commands:
+// node src/fs/delete

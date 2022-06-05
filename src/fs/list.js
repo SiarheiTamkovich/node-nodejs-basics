@@ -12,3 +12,6 @@ export const list = async () => {
   })
 };
 list();
+
+// for Powershell terminal run commands:
+// node src/fs/list

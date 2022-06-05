@@ -31,3 +31,6 @@ export const copy = async () => {
   })
 };
 copy();
+
+// for Powershell terminal run commands:
+// node src/fs/copy

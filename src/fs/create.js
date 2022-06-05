@@ -18,5 +18,7 @@ export const create = async () => {
     console.log('FS operation failed')
   })
 };
-
 create();
+
+// for Powershell terminal run commands:
+// node src/fs/create
